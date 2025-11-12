@@ -39,6 +39,12 @@
   header h1 {
     font-size: 34px;
   }
+  #locationDot {
+    transform: translate(15px, 10px);
+  }
+  #login-info {
+    margin-top: 80px;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -165,4 +171,3 @@
     }
   }
 }
-
