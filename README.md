@@ -29,15 +29,15 @@ Odpowiada za strukturę strony – sekcje takie jak:
 - walidacja formularza zamówienia i potwierdzenie zakupu.
 
   ## Zrzuty ekranów:
-  -desktop
+  ### desktop
   <img alt="img" src="./desktop.jpg" />
   <br>
   <br>
-  -tablet
+  ### tablet
   <img alt="img" src="./tablet.jpg" />
   <br>
   <br>
-  -phone
+  ### phone
   <img alt="img" src="./phone.jpg" />
   
 
