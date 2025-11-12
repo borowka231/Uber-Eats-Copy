@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .delivery-pop-up,
   .delivery-change-popup {
     inset: 0;
@@ -8,6 +8,7 @@
   }
   #left-bar {
     width: 70%;
+    left: -1000px;
   }
   nav {
     display: flex;
@@ -164,3 +165,4 @@
     }
   }
 }
+
