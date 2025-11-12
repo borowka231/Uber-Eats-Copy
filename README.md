@@ -1,6 +1,6 @@
 # Uber-Eats-Copy
 
-##🍔Opis:
+## 🍔Opis:
 Strona stanowi prostą kopię serwisu Uber Eats, stworzoną przy użyciu technologii front-endowych (HTML, CSS, JavaScript).
 
 🔹 HTML
