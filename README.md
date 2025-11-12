@@ -47,4 +47,4 @@ Odpowiada za strukturę strony – sekcje takie jak:
 
   
 
-[Odwiedź strone](https://borowka231.github.io/Uber-Eats-Copy/)
+[Odwiedź moją strone](https://borowka231.github.io/Uber-Eats-Copy/)
