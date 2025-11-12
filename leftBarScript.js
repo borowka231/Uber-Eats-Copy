@@ -7,6 +7,7 @@ leftBarButton.addEventListener("click", () => {
   overlay.style.display = "block";
 });
 overlay.addEventListener("click", () => {
-  leftBar.style.left = "-500px";
+  leftBar.style.left = "-1000px";
   overlay.style.display = "none";
 });
+
