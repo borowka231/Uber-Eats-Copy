@@ -32,6 +32,7 @@
 }
 #footer-bottom {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -54,4 +55,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#footer-bottom-links {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}
+.break {
+  width: 15px;
+  height: 15px;
+}
+#safe-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25%;
+  width: 50%;
+  font-size: 15px;
 }
