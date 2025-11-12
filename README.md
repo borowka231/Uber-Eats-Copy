@@ -31,8 +31,12 @@ Odpowiada za strukturę strony – sekcje takie jak:
   ## Zrzuty ekranów:
   -desktop
   <img alt="img" src="./desktop.jpg" />
+  <br>
+  <br>
   -tablet
   <img alt="img" src="./tablet.jpg" />
+  <br>
+  <br>
   -phone
   <img alt="img" src="./phone.jpg" />
   
