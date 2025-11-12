@@ -1,0 +1,22 @@
+#our-countries {
+  border-bottom: 1px solid gainsboro;
+}
+#countries-main {
+  margin: 5% 50px 50px;
+}
+#countries-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  & a {
+    color: black;
+  }
+}
+#countries-container {
+  display: flex;
+  flex-direction: row;
+}
+.countries {
+  width: 25%;
+}

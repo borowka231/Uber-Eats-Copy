@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="uberIcon.png" type="image/x-icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navStyle.css" />
+    <link rel="stylesheet" href="headerStyle.css" />
+    <link rel="stylesheet" href="mainMenuStyle.css" />
+    <link rel="stylesheet" href="mainMapStyle.css" />
+    <link rel="stylesheet" href="countriesStyle.css" />
+    <link rel="stylesheet" href="footerStyle.css" />
+    <link rel="stylesheet" href="popupStyle.css" />
+    <link rel="stylesheet" href="mediaQueryStyle.css" />
+
+    <title>
+      Uber Eats | Zamawiaj jedzenie, zakupy spożywcze i wiele więcej - z wygodną
+      dostawą | Logowanie
+    </title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div id="left-bar">
+      <button id="registerin-left-bar">Zarejestruj się</button>
+      <button id="login-left-bar">Zaloguj się</button>
+      <br />
+      <a href="">Utwórz konto firmowe</a>
+      <br />
+      <a href="">Dodaj swoją restaurację</a>
+      <br />
+      <a href="">Zajerestruj się, aby zrealizować dostawy</a>
+      <br />
+      <a href=""
+        >Zamów przejazd<i class="fa-sharp fa-solid fa-up-right-from-square"></i
+      ></a>
+    </div>
+
+    <div id="mobile-nav">
+      <i class="fa-solid fa-location-dot"></i>
+      <button id="mobile-button">Podaj adres zamówienia</button>
+    </div>
+
+    <nav id="navbar">
+      <span class="navTitle">
+        <button id="left-bar-button"><i class="fa-solid fa-bars"></i></button>
+        <h2>Uber Eats</h2>
+        <div id="delivery-adress">
+          <button id="delivery-adress-button">
+            <i class="fa-solid fa-location-dot"></i> Wpisz adres dostawy
+          </button>
+        </div>
+      </span>
+      <span class="navLinksContainer">
+        <a href="" id="arrowLaunch">
+          Zamów przejazd
+          <i class="fa-sharp fa-solid fa-up-right-from-square"></i>
+        </a>
+        <a href="" id="logIn"><b>Zaloguj się</b></a>
+        <a href="" id="registerIn">Zarejestruj się</a>
+      </span>
+    </nav>
+    <header>
+      <div class="container">
+        <h1>Zamów dostawę w Twojej okolicy</h1>
+        <br />
+        <div class="homeAdress">
+          <div id="locationDot"><i class="fa-solid fa-location-dot"></i></div>
+          <input
+            type="text"
+            id="adressInput"
+            placeholder="Wpisz adres dostawy..."
+          />
+          <details>
+            <summary>
+              <i class="fas fa-clock"></i> Dostarcz teraz
+              <i class="fa-solid fa-angle-down"></i>
+            </summary>
+            <ul>
+              <li class="delivery">
+                <i id="clockIcon" class="fa-solid fa-clock"></i>Dostarcz teraz
+              </li>
+              <li class="delivery">
+                <i id="calendarIcon" class="fa-solid fa-calendar"></i
+                ><button id="open-change-delivery" class="planDeliver">
+                  Zaplanować dostawę
+                </button>
+              </li>
+            </ul>
+          </details>
+          <button id="searchButton">Wyszukaj restauracje</button>
+          <p id="login-info">Lub <a href="">Zaloguj się</a></p>
+        </div>
+      </div>
+      <div class="delivery-pop-up">
+        <button id="close-popup">X</button>
+        <h2>Wpisz adres dostawy</h2>
+        <br />
+        <input type="text" placeholder="Wyszukaj adres" />
+      </div>
+
+      <div class="delivery-change-popup">
+        <button id="close-delivery">X</button>
+        <h2>Wybierz godzinę</h2>
+
+        <select name="days-of-the-week" id="days-of-the-week"></select>
+        <select name="delivery_hours" id="delivery-hours"></select>
+
+        <button id="plan-button">Zaplanuj</button>
+        <button id="delivery-button">Dostarcz</button>
+      </div>
+    </header>
+    <main>
+      <section id="main-menu">
+        <div id="menu-container">
+          <div class="menu">
+            <img src="1.png" alt="1" />
+            <h2>Zadbaj o posiłki dla pracowników</h2>
+            <a href="">Utwórz konto firmowe</a>
+          </div>
+          <div class="menu">
+            <img src="2.png" alt="2" />
+            <h2>Ty zapewniasz menu, a my dostawę</h2>
+            <a href="">Dodaj sowją restaurację</a>
+          </div>
+          <div class="menu">
+            <img src="3.png" alt="3" />
+            <h2>Realizuj dostawy z Uber Eats</h2>
+            <a href="">Zarejestruj się, aby realizowac dostawy</a>
+          </div>
+        </div>
+      </section>
+      <section id="main-map">
+        <div id="map-container">
+          <div id="map-header">
+            <h1>Miasta w pobliżu</h1>
+            <a href="">Wyświetl wszystkie miasta(ponad 500)</a>
+          </div>
+          <br />
+          <div>
+            <iframe
+              id="map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2991853.8890370177!2d19.180671039390074!3d51.990945974187866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1761807986322!5m2!1spl!2spl"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div id="cities-container">
+            <div class="cities">
+              <p>Białystok</p>
+              <br />
+              <p>Bydgoszcz</p>
+              <br />
+              <p>Częstochowa</p>
+              <br />
+              <p>Gorzów Wielkopolski</p>
+              <br />
+              <p>Kalisz</p>
+              <br />
+              <p>Kielce</p>
+              <br />
+            </div>
+            <div class="cities">
+              <p>Koszalin</p>
+              <br />
+              <p>Kraków</p>
+              <br />
+              <p>Legnica</p>
+              <br />
+              <p>Łódź</p>
+              <br />
+              <p>Lublin</p>
+              <br />
+              <p>Olsztyn</p>
+              <br />
+            </div>
+            <div class="cities">
+              <p>Płock</p>
+              <br />
+              <p>Poznań</p>
+              <br />
+              <p>Radom</p>
+              <br />
+              <p>Rzeszów</p>
+              <br />
+              <p>Szczecin</p>
+              <br />
+              <p>Toruń</p>
+              <br />
+            </div>
+            <div class="cities">
+              <p>Trójmiasto</p>
+              <br />
+              <p>Warszawa</p>
+              <br />
+              <p>Włocławek</p>
+              <br />
+              <p>Wrocław</p>
+              <br />
+              <p>Zielona Góra</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-countries">
+        <div id="countries-main">
+          <div id="countries-header">
+            <h1>Kraje, w których działa Uber Eats</h1>
+            <a href="">Zobacz wszystkie kraje</a>
+          </div>
+          <div id="countries-container">
+            <div class="countries">
+              <p>Australia</p>
+              <br />
+              <p>Belgia</p>
+              <br />
+              <p>Chile</p>
+              <br />
+              <p>Dominikana</p>
+              <br />
+              <p>Ekwador</p>
+              <br />
+              <p>Francja</p>
+              <br />
+              <p>Gwatemala</p>
+              <br />
+              <p>Hiszpania</p>
+              <br />
+            </div>
+            <div class="countries">
+              <p>Holandia</p>
+              <br />
+              <p>Irlandia</p>
+              <br />
+              <p>Japonia</p>
+              <br />
+              <p>Kanada</p>
+              <br />
+              <p>Kenia</p>
+              <br />
+              <p>Kostaryka</p>
+              <br />
+              <p>Luksemburg</p>
+              <br />
+              <p>Meksyk</p>
+              <br />
+            </div>
+            <div class="countries">
+              <p>Niemcy</p>
+              <br />
+              <p>Nowa Zelandia</p>
+              <br />
+              <p>Panama</p>
+              <br />
+              <p>Polska</p>
+              <br />
+              <p>Portugalia</p>
+              <br />
+              <p>Republika Południowej Afryki</p>
+              <br />
+              <p>Salwador</p>
+              <br />
+              <p>Sri Lanka</p>
+              <br />
+            </div>
+            <div class="countries">
+              <p>Stany Zjednoczone</p>
+              <br />
+              <p>Szwajcaria</p>
+              <br />
+              <p>Szwecja</p>
+              <br />
+              <p>Tajwan (Republika Chińska)</p>
+              <br />
+              <p>Wielka Brytania</p>
+              <br />
+              <p>Włochy</p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-main">
+        <div id="footer-container">
+          <div id="footer-title">
+            <h1>Uber Eats</h1>
+            <img src="applestore.png" alt="applestore" />
+            <img src="googleplay.png" alt="googleplay" />
+          </div>
+          <div id="link-container">
+            <div class="footer-links">
+              <a href="">Pomoc</a>
+              <br />
+              <a href="">Dodaj swoją restaurację</a>
+              <br />
+              <a href="">Zajerestruj się, aby realizować dostawy</a>
+              <br />
+              <a href="">Utwórz konto firmowe</a>
+              <br />
+              <a href="">Warunki dot. opłaty markerplace</a>
+              <br />
+              <a href="">Umowa dot.usług dostawy</a>
+            </div>
+            <div class="footer-links">
+              <a href="">Restauracje w pobliżu</a>
+              <br />
+              <a href="">Pokaż wszystkie miasta</a>
+              <br />
+              <a href="">Zobacz wszystkie kraje</a>
+              <br />
+              <a href="">Odbiór w pobliżu</a>
+              <br />
+              <a href="">Informacje o Uber Eats</a>
+              <br />
+              <a href=""><i class="fa-solid fa-language"></i>Polski</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <div id="footer-bottom-content">
+          <div id="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <a href="">Działanie stron oraz aplikacji Uber i Uber Eats</a>
+            <br />
+            <a href="">Polityka prywatnosci</a>
+            <br />
+            <a href="">Warunki</a>
+            <br />
+            <a href="">Cennik</a>
+            <br />
+            <a href=""
+              >Nie zgadzam sie na sprzedaż ani udostepnianie danych osobowych
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="navbarScript.js"></script>
+    <script src="deliveryScript.js"></script>
+    <script src="leftBarScript.js"></script>
+    <script type="module" src="mobileScript.js"></script>
+  </body>
+</html>

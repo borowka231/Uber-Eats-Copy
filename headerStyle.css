@@ -1,0 +1,108 @@
+header {
+  height: 100vh;
+  background: url("baner.jpg") no-repeat center/cover;
+  padding: 20px;
+  & h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  height: 100vh;
+  width: 100%;
+}
+
+.homeAdress {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  float: left;
+}
+#locationDot {
+  position: absolute;
+  transform: translate(12px, 15px);
+}
+#adressInput {
+  width: 20%;
+  height: 50px;
+  border: 0;
+  border-radius: 15px;
+  padding: 10px 15px 10px 40px;
+  font-size: 16px;
+
+  &:focus {
+    outline: 0;
+    border-bottom: 1px solid rgb(39, 133, 221);
+    transition: 0.2s;
+  }
+}
+
+header summary {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.delivery {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  background-color: white;
+  padding: 10px;
+}
+#clockIcon,
+#calendarIcon {
+  border-radius: 50%;
+  background-color: lightgray;
+  padding: 5px;
+}
+#searchButton {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(70, 68, 68);
+  }
+}
+#login-info {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 0 5px;
+
+  & a {
+    color: black;
+  }
+}
+#open-change-delivery {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+.delivery:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+.delivery button:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}

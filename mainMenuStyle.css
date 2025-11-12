@@ -1,0 +1,22 @@
+#mainMenu {
+  height: 100vh;
+  padding: 20px;
+  margin: 20px;
+}
+#menu-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.manu {
+  display: flex;
+  flex-direction: column;
+}
+.menu a {
+  color: black;
+}
+img {
+  width: 500px;
+  height: 300px;
+}

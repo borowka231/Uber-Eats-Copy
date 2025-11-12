@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#map-container {
+  margin: 10% 50px 50px;
+}
+#map-header {
+  display: flex;
+  justify-content: space-between;
+
+  & a {
+    color: black;
+  }
+}
+#cities-container {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.cities {
+  width: 25%;
+}
