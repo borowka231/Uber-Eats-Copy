@@ -31,17 +31,17 @@ Odpowiada za strukturę strony – sekcje takie jak:
   ## Zrzuty ekranów:
   -desktop
   <br>
-  <img alt="img" src="./desktop.jpg" />
+  <img alt="img" src="./desktop1.jpg" />
   <br>
   <br>
   -tablet
   <br>
-  <img alt="img" src="./tablet.jpg" />
+  <img alt="img" src="./tablet1.jpg" />
   <br>
   <br>
   -phone
   <br>
-  <img alt="img" src="./phone.jpg" />
+  <img alt="img" src="./phone1.jpg" />
   <br>
   
 
