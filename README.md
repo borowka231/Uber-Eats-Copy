@@ -28,6 +28,10 @@ Odpowiada za strukturę strony – sekcje takie jak:
 
 - walidacja formularza zamówienia i potwierdzenie zakupu.
 
+  ## Zrzuty ekranów:
+  -desktop
+  <img alt="img" src="./desktop.jpg" />
+
   
 
 [Odwiedź strone](https://borowka231.github.io/Uber-Eats-Copy/)
