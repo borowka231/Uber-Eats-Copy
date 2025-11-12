@@ -30,15 +30,19 @@ Odpowiada za strukturę strony – sekcje takie jak:
 
   ## Zrzuty ekranów:
   ### desktop
+  <br>
   <img alt="img" src="./desktop.jpg" />
   <br>
   <br>
   ### tablet
+  <br>
   <img alt="img" src="./tablet.jpg" />
   <br>
   <br>
   ### phone
+  <br>
   <img alt="img" src="./phone.jpg" />
+  <br>
   
 
   
